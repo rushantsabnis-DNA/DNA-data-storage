@@ -5,10 +5,10 @@ import matplotlib.pyplot as plt
 from skimage.metrics import peak_signal_noise_ratio, structural_similarity, mean_squared_error
 
 # === Step 1: Load, Resize, and Crop Image ===
-image = Image.open("Eye.jpg").convert("RGB")
-RESIZE_WIDTH, RESIZE_HEIGHT = 120, 160
+image = Image.open("Eye.jpg").convert("RGB")#this is the image that will get processed 
+RESIZE_WIDTH, RESIZE_HEIGHT = 120, 160# select the height and width of image
 image = image.resize((RESIZE_WIDTH, RESIZE_HEIGHT))
-left, top = 16, 16
+left, top = 16, 16# this is left top of the image
 crop_width, crop_height = 88, 96
 cropped_image = image.crop((left, top, left + crop_width, top + crop_height))
 rgb_array = np.array(cropped_image)
