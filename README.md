@@ -40,7 +40,7 @@ python src/oligopool.py --input outputs/encoded.txt --output outputs/oligos.csv
 
 ## License
 
-This project is licensed under the Texas A&M Univeristy and Univeristy of Missouri License 
+This project is licensed under the Texas A&M University and University of Missouri License 
 
 ---
 
